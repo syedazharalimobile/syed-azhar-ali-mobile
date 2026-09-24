@@ -1,421 +1,309 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Syed Azhar Ali Mobile</title>
-  <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Naskh Arabic",sans-serif;background:#f4f6f9;color:#161616;line-height:1.6}
-    header{background:linear-gradient(135deg,#111,#292929);color:#fff;padding:16px 10px;text-align:center}
-    .logo{font-size:28px;font-weight:800}.sub{opacity:.9;margin-top:4px;font-size:14px}
-    .wrap{max-width:1100px;margin:auto;padding:16px}
-    .hero,.section{background:#fff;border-radius:18px;padding:24px;margin:16px 0;box-shadow:0 5px 20px #00000010}
-    .hero{text-align:center;border-top:4px solid #25D366}
-    .hero h1{font-size:24px;margin:0 0 8px}.welcome{font-size:18px;color:#333}
-    .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;background:#111;color:#fff;font-weight:700;margin:6px 4px;font-size:15px}
-    .btn.whatsapp{background:#25D366;color:#fff}
-    .btn.group{background:#128C7E;color:#fff}
-    h2{margin-top:0;font-size:22px;color:#111;border-bottom:2px solid #eee;padding-bottom:8px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:16px}
-    .card{border:1px solid #e1e4e8;border-radius:16px;padding:16px;background:#fff;text-align:center;box-shadow:0 4px 12px #00000008;transition:transform 0.2s}
-    .card:hover{transform:translateY(-3px)}
-    .img-container{display:flex;gap:8px;justify-content:center;margin-bottom:12px}
-    .card img{width:48%;height:180px;object-fit:contain;border-radius:8px;background:#fafafa;padding:4px;border:1px solid #eee}
-    .card h3{margin:8px 0 4px;font-size:18px;color:#111}
-    .card .specs{font-size:13px;color:#555;margin:6px 0;background:#f8f9fa;padding:6px;border-radius:6px;text-align:right}
-    .card .price{color:#27ae60;font-weight:bold;font-size:18px;margin:6px 0}
-    .card .fee{color:#e74c3c;font-weight:bold;font-size:13px;background:#fdf2e9;padding:6px;border-radius:6px;margin:8px 0;display:inline-block;width:100%}
-    .payment-box{background:#f0fff4;border:2px dashed #25d366;border-radius:14px;padding:20px;margin-top:10px;text-align:center}
-    .payment-box h3{margin-top:0;color:#128C7E;font-size:20px}
-    .payment-details{font-size:16px;font-weight:bold;color:#222;margin:10px 0}
-    .contact-note{background:#fff8e1;border:1px solid #ffe0b2;padding:15px;border-radius:10px;text-align:center;margin-top:20px;font-weight:bold;color:#d35400}
-    footer{text-align:center;padding:25px;color:#666;font-size:14px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سید اظہر علی موبائل - پروڈکٹ کیٹلاگ</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 15px; direction: rtl; text-align: right; }
+        .header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 20px; text-align: center; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .header h1 { margin: 0 0 10px 0; font-size: 22px; }
+        .header p { margin: 0; font-size: 14px; color: #e0e0e0; }
+        .card { background: #ffffff; border-radius: 10px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #eef2f5; }
+        .card h3 { color: #2a5298; margin-top: 0; border-bottom: 2px solid #f0f2f5; padding-bottom: 8px; font-size: 18px; }
+        .img-container { text-align: center; background: #fafbfc; padding: 10px; border-radius: 8px; margin-bottom: 10px; border: 1px dashed #dcdde1; }
+        .img-container img { max-width: 100%; height: 200px; object-fit: contain; border-radius: 6px; }
+        .details p { margin: 6px 0; font-size: 14px; }
+        .link-box { background: #f1f2f6; padding: 8px; border-radius: 5px; font-size: 12px; word-break: break-all; margin-top: 8px; }
+        .link-box a { color: #0984e3; text-decoration: none; }
+        .footer { background: #2d3436; color: white; padding: 20px; border-radius: 10px; text-align: center; margin-top: 25px; }
+        .footer h3 { color: #fab1a0; margin-top: 0; }
+    </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">📱 Syed Azhar Ali Mobile</div>
-  <div class="sub">Mobile • Laptop • Electronics | Special Offers & Wholesale Deals</div>
-</header>
+    <div class="header">
+        <h1>السلام علیکم ورحمۃ اللہ وبرکاتہ</h1>
+        <p>سید اظہر علی موبائل - تمام دستیاب ماڈلز کی تفصیلی فہرست</p>
+    </div>
 
-<main class="wrap">
-
-<!-- Hero Section -->
-<section class="hero">
-  <h1>وعلیکم السلام! 👋</h1>
-  <p class="welcome">سید اظہر علی موبائلز میں خوش آمدید!</p>
-  <p>تمام ماڈلز PTA Approved اور 10/10 کنڈیشن میں دستیاب ہیں۔ All Pakistan Delivery 🇵🇰</p>
-  <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20place%20an%20order!" target="_blank">💬 WhatsApp Chat</a>
-  <a class="btn group" href="https://chat.whatsapp.com/KNt63DmBUdA2lsxYdOothr" target="_blank">👥 Join WhatsApp Group</a>
-</section>
-
-<!-- Product Section -->
-<section class="section">
-  <h2>🔥 VIP Stock & Mobile Offers (Front & Back Views)</h2>
-  <div class="grid">
-    
     <!-- iPhone 5S -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="iPhone 5S Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 5S Back">
-      </div>
-      <h3>📱 iPhone 5S 32GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 8MP | 🤳 Front: 1.2MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 2,050</div>
-      <div class="fee">📌 Booking Fee: Rs. 550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%205S%20(32GB)%20-%20Price:%20Rs.2050" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 5S</h3>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="iPhone 5S">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" target="_blank">فراہم کردہ لنک</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 5S</p>
+            <p><strong>حالت:</strong> بہترین اور صاف ستھرا</p>
+        </div>
     </div>
 
     <!-- iPhone 6S -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone 6S Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 6S Back">
-      </div>
-      <h3>📱 iPhone 6S 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 5MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 6,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%206S%20(128GB)%20-%20Price:%20Rs.6000" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 6S</h3>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5" alt="iPhone 6S">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5" target="_blank">فراہم کردہ لنک</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 6S</p>
+            <p><strong>حالت:</strong> بہترین اور معیاری</p>
+        </div>
     </div>
 
-    <!-- iPhone 7 Plus -->
+    <!-- iPhone 7 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="iPhone 7 Plus Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 7 Plus Back">
-      </div>
-      <h3>📱 iPhone 7 Plus 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 7MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 7,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%207%20Plus%20(256GB)%20-%20Price:%20Rs.7500" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 7</h3>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5" alt="iPhone 7">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="https://images.unsplash.com/photo-1530319067432-f2a729c03db5" target="_blank">فراہم کردہ لنک</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 7</p>
+            <p><strong>حالت:</strong> بہترین اور صاف</p>
+        </div>
     </div>
 
     <!-- iPhone 8 Plus -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 8 Plus Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone 8 Plus Back">
-      </div>
-      <h3>📱 iPhone 8 Plus 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 7MP<br>🔋 Battery: 100% | ⭐ 10/10</div>
-      <div class="price">💵 Rs. 8,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%208%20Plus%20(256GB)%20-%20Price:%20Rs.8000" target="_blank">🛒 Order Now</a>
-    </div>
-
-    <!-- iPhone X -->
-    <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="iPhone X Front">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="iPhone X Back">
-      </div>
-      <h3>📱 iPhone X 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 7MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 11,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%20X%20(128GB)%20-%20Price:%20Rs.11500" target="_blank">🛒 Order Now</a>
-    </div>
-
-    <!-- iPhone XS Max -->
-    <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="iPhone XS Max Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone XS Max Back">
-      </div>
-      <h3>📱 iPhone XS Max 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 7MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 14,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,570</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%20XS%20Max%20(256GB)%20-%20Price:%20Rs.14000" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 8 Plus</h3>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab" alt="iPhone 8 Plus">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="https://images.unsplash.com/photo-1592750475338-74b7b21085ab" target="_blank">فراہم کردہ لنک</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 8 Plus</p>
+            <p><strong>حالت:</strong> زبردست اور معیاری</p>
+        </div>
     </div>
 
     <!-- iPhone XR -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone XR Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="iPhone XR Back">
-      </div>
-      <h3>📱 iPhone XR 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 7MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 8,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%20XR%20(128GB)%20-%20Price:%20Rs.8000" target="_blank">🛒 Order Now</a>
+        <h3>iPhone XR</h3>
+        <div class="img-container">
+            <img src="Https://images2.kabum.com.br/produtos/fotos/99052/iphone-xr-amarelo-64gb-mry72bz__1541687028_gg.jpg" alt="iPhone XR">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://images2.kabum.com.br/produtos/fotos/99052/iphone-xr-amarelo-64gb-mry72bz__1541687028_gg.jpg" target="_blank">Https://images2.kabum.com.br/produtos/fotos/99052/iphone-xr-amarelo-64gb-mry72bz__1541687028_gg.jpg</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone XR</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- iPhone 11 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 11 Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone 11 Back">
-      </div>
-      <h3>📱 iPhone 11 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 12MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 16,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 3,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%2011%20(256GB)%20-%20Price:%20Rs.16500" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 11</h3>
+        <div class="img-container">
+            <img src="Https://cdn.salla.sa/XqonY/UJJBzA6witC14LygQs2yh8nKnaFAumbU4Nx7Lzkn.png" alt="iPhone 11">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://cdn.salla.sa/XqonY/UJJBzA6witC14LygQs2yh8nKnaFAumbU4Nx7Lzkn.png" target="_blank">Https://cdn.salla.sa/XqonY/UJJBzA6witC14LygQs2yh8nKnaFAumbU4Nx7Lzkn.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 11</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
         <!-- iPhone 11 Pro Max -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="iPhone 11 Pro Max Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="iPhone 11 Pro Max Back">
-      </div>
-      <h3>📱 iPhone 11 Pro Max 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 12MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 20,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 4,570</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%2011%20Pro%20Max%20(256GB)%20-%20Price:%20Rs.20500" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 11 Pro Max</h3>
+        <div class="img-container">
+            <img src="Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw69087ca5/38960357/132358_large.png" alt="iPhone 11 Pro Max">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw69087ca5/38960357/132358_large.png" target="_blank">Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw69087ca5/38960357/132358_large.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 11 Pro Max</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- iPhone 12 Pro Max -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 12 Pro Max Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone 12 Pro Max Back">
-      </div>
-      <h3>📱 iPhone 12 Pro Max 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 12MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 25,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 5,570</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%2012%20Pro%20Max%20(256GB)%20-%20Price:%20Rs.25500" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 12 Pro Max</h3>
+        <div class="img-container">
+            <img src="Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw341aa908/38974134/142035_large.png" alt="iPhone 12 Pro Max">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw341aa908/38974134/142035_large.png" target="_blank">Https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw341aa908/38974134/142035_large.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 12 Pro Max</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- iPhone 13 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="iPhone 13 Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="iPhone 13 Back">
-      </div>
-      <h3>📱 iPhone 13 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 12MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 28,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 6,500</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%2013%20(256GB)%20-%20Price:%20Rs.28500" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 13</h3>
+        <div class="img-container">
+            <img src="Https://f.fcdn.app/imgs/f15066/electroventas.com.uy/elecuy/e9ea/original/catalogo/IPHONE13-128_AZ_4/1500-1500/celular-iphone-13-128gb-refurbished-azul.jpg" alt="iPhone 13">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://f.fcdn.app/imgs/f15066/electroventas.com.uy/elecuy/e9ea/original/catalogo/IPHONE13-128_AZ_4/1500-1500/celular-iphone-13-128gb-refurbished-azul.jpg" target="_blank">Https://f.fcdn.app/imgs/f15066/electroventas.com.uy/elecuy/e9ea/original/catalogo/IPHONE13-128_AZ_4/1500-1500/celular-iphone-13-128gb-refurbished-azul.jpg</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 13</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- iPhone 13 Pro Max -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 13 Pro Max Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="iPhone 13 Pro Max Back">
-      </div>
-      <h3>📱 iPhone 13 Pro Max 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 12MP | 🤳 Front: 12MP<br>🔋 Battery: 100% | ⭐ Mint</div>
-      <div class="price">💵 Rs. 38,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 7,500</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20iPhone%2013%20Pro%20Max%20(256GB)%20-%20Price:%20Rs.38000" target="_blank">🛒 Order Now</a>
+        <h3>iPhone 13 Pro Max</h3>
+        <div class="img-container">
+            <img src="Https://media.rueducommerce.fr/rd/products/f03/f0384182b24a4faa0a476b2a98cd795773793e47.png" alt="iPhone 13 Pro Max">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://media.rueducommerce.fr/rd/products/f03/f0384182b24a4faa0a476b2a98cd795773793e47.png" target="_blank">Https://media.rueducommerce.fr/rd/products/f03/f0384182b24a4faa0a476b2a98cd795773793e47.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> iPhone 13 Pro Max</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Vivo Y20 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Vivo Y20 Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Vivo Y20 Back">
-      </div>
-      <h3>📱 Vivo Y20 🔥</h3>
-      <div class="specs">💾 4GB+64GB | ✅ PTA Approved<br>📸 Back: 13MP | 🤳 Front: 8MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 6,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Vivo%20Y20%20-%20Price:%20Rs.6000" target="_blank">🛒 Order Now</a>
+        <h3>Vivo Y20</h3>
+        <div class="img-container">
+            <img src="Https://fulloffice.com/cdn/shop/products/image-699047f04e204cbf9e22e63771e32132.jpg?v=1661465594&width=1214" alt="Vivo Y20">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://fulloffice.com/cdn/shop/products/image-699047f04e204cbf9e22e63771e32132.jpg?v=1661465594&width=1214" target="_blank">Https://fulloffice.com/cdn/shop/products/image-699047f04e204cbf9e22e63771e32132.jpg?v=1661465594&width=1214</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Vivo Y20</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Vivo Y21 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Vivo Y21 Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="Vivo Y21 Back">
-      </div>
-      <h3>📱 Vivo Y21 4GB + 64GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 13MP+2MP | 🤳 Front: 8MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 8,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Vivo%20Y21%20(4GB+64GB)%20-%20Price:%20Rs.8000" target="_blank">🛒 Order Now</a>
+        <h3>Vivo Y21</h3>
+        <div class="img-container">
+            <img src="Https://media.rueducommerce.fr/rd/products/7ca/7cac68cd86d4bf41d862e809da97c1c6f04ea81b.png" alt="Vivo Y21">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://media.rueducommerce.fr/rd/products/7ca/7cac68cd86d4bf41d862e809da97c1c6f04ea81b.png" target="_blank">Https://media.rueducommerce.fr/rd/products/7ca/7cac68cd86d4bf41d862e809da97c1c6f04ea81b.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Vivo Y21</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Vivo Y33s -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Vivo Y33s Front">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="Vivo Y33s Back">
-      </div>
-      <h3>📱 Vivo Y33s 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 50MP+2MP+2MP | 🤳 Front: 16MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 10,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Vivo%20Y33s%20(8GB+128GB)%20-%20Price:%20Rs.10500" target="_blank">🛒 Order Now</a>
+        <h3>Vivo Y33s</h3>
+        <div class="img-container">
+            <img src="Https://down-vn.img.susercontent.com/file/e4208c3502ef3f4d4509b2ccc39ce55f" alt="Vivo Y33s">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://down-vn.img.susercontent.com/file/e4208c3502ef3f4d4509b2ccc39ce55f" target="_blank">Https://down-vn.img.susercontent.com/file/e4208c3502ef3f4d4509b2ccc39ce55f</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Vivo Y33s</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Vivo Y35 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Vivo Y35 Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="Vivo Y35 Back">
-      </div>
-      <h3>📱 Vivo Y35 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 50MP+2MP+2MP | 🤳 Front: 16MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 14,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,500</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Vivo%20Y35%20(8GB+128GB)%20-%20Price:%20Rs.14500" target="_blank">🛒 Order Now</a>
+        <h3>Vivo Y35</h3>
+        <div class="img-container">
+            <img src="Https://cdn.cimri.io/image/1000x1000/vivo-y35-256gb-8gb-ram-yildizli-mavi_664979170.jpg" alt="Vivo Y35">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://cdn.cimri.io/image/1000x1000/vivo-y35-256gb-8gb-ram-yildizli-mavi_664979170.jpg" target="_blank">Https://cdn.cimri.io/image/1000x1000/vivo-y35-256gb-8gb-ram-yildizli-mavi_664979170.jpg</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Vivo Y35</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Vivo Y36 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Vivo Y36 Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Vivo Y36 Back">
-      </div>
-      <h3>📱 Vivo Y36 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 50MP+2MP | 🤳 Front: 16MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 16,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 3,070</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Vivo%20Y36%20(8GB+128GB)%20-%20Price:%20Rs.16000" target="_blank">🛒 Order Now</a>
+        <h3>Vivo Y36</h3>
+        <div class="img-container">
+            <img src="Https://cdn.beebom.com/mobile/2023/10/Screenshot-2023-10-20-174925.png" alt="Vivo Y36">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://cdn.beebom.com/mobile/2023/10/Screenshot-2023-10-20-174925.png" target="_blank">Https://cdn.beebom.com/mobile/2023/10/Screenshot-2023-10-20-174925.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Vivo Y36</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
-
-    <!-- Oppo A16 -->
+        <!-- Oppo A16 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=500" alt="Oppo A16 Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="Oppo A16 Back">
-      </div>
-      <h3>📱 Oppo A16 4GB + 64GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 13+2+2MP | 🤳 Front: 8MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 6,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Oppo%20A16%20(4GB+64GB)%20-%20Price:%20Rs.6000" target="_blank">🛒 Order Now</a>
+        <h3>Oppo A16</h3>
+        <div class="img-container">
+            <img src="Https://cdn.beebom.com/mobile/oppo-a16/oppo-16k-front-back-designs.png" alt="Oppo A16">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://cdn.beebom.com/mobile/oppo-a16/oppo-16k-front-back-designs.png" target="_blank">Https://cdn.beebom.com/mobile/oppo-a16/oppo-16k-front-back-designs.png</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Oppo A16</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Oppo A17 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=500" alt="Oppo A17 Front">
-        <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=500" alt="Oppo A17 Back">
-      </div>
-      <h3>📱 Oppo A17 4GB + 64GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 50MP+2MP | 🤳 Front: 5MP<br>🔋 Battery: 5000mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 8,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,550</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Oppo%20A17%20(4GB+64GB)%20-%20Price:%20Rs.8000" target="_blank">🛒 Order Now</a>
+        <h3>Oppo A17</h3>
+        <div class="img-container">
+            <img src="Https://www.mymobiles.com/storage/products/gallery/oppo/a17-deals/04-thumb.webp" alt="Oppo A17">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://www.mymobiles.com/storage/products/gallery/oppo/a17-deals/04-thumb.webp" target="_blank">Https://www.mymobiles.com/storage/products/gallery/oppo/a17-deals/04-thumb.webp</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Oppo A17</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
-    <!-- Oppo F19 Pro -->
+    <!-- Oppo F19 -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=500" alt="Oppo F19 Pro Front">
-        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="Oppo F19 Pro Back">
-      </div>
-      <h3>📱 Oppo F19 Pro 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: Quad 48MP | 🤳 Front: 16MP<br>🔋 Battery: 4310mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 11,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,000</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Oppo%20F19%20Pro%20(8GB+128GB)%20-%20Price:%20Rs.11500" target="_blank">🛒 Order Now</a>
+        <h3>Oppo F19</h3>
+        <div class="img-container">
+            <img src="Https://www.mobiledokan.com/media/oppo-f19-black-color-image.webp" alt="Oppo F19">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://www.mobiledokan.com/media/oppo-f19-black-color-image.webp" target="_blank">Https://www.mobiledokan.com/media/oppo-f19-black-color-image.webp</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Oppo F19</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Oppo F21 Pro -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=500" alt="Oppo F21 Pro Front">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Oppo F21 Pro Back">
-      </div>
-      <h3>📱 Oppo F21 Pro 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 64MP+2+2MP | 🤳 Front: 16MP<br>🔋 Battery: 4500mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 14,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,570</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Oppo%20F21%20Pro%20(8GB+128GB)%20-%20Price:%20Rs.14000" target="_blank">🛒 Order Now</a>
+        <h3>Oppo F21 Pro</h3>
+        <div class="img-container">
+            <img src="Https://www.giznext.com/pk/mobiles/oppo-f21-pro-gnt/images" alt="Oppo F21 Pro">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://www.giznext.com/pk/mobiles/oppo-f21-pro-gnt/images" target="_blank">Https://www.giznext.com/pk/mobiles/oppo-f21-pro-gnt/images</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Oppo F21 Pro</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
     <!-- Oppo Reno 8 Pro -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=500" alt="Oppo Reno 8 Pro Front">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" alt="Oppo Reno 8 Pro Back">
-      </div>
-      <h3>📱 Oppo Reno 8 Pro 12GB + 256GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: 50+8+2MP | 🤳 Front: 32MP<br>🔋 Battery: 4500mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 16,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 3,050</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Oppo%20Reno%208%20Pro%20(12GB+256GB)%20-%20Price:%20Rs.16000" target="_blank">🛒 Order Now</a>
-  </div>
-      <!-- Google Pixel 6 -->
+        <h3>Oppo Reno 8 Pro</h3>
+        <div class="img-container">
+            <img src="Https://boulanger.scene7.com/is/content/Boulanger/6932169311144_f_0" alt="Oppo Reno 8 Pro">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://boulanger.scene7.com/is/content/Boulanger/6932169311144_f_0" target="_blank">Https://boulanger.scene7.com/is/content/Boulanger/6932169311144_f_0</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Oppo Reno 8 Pro</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
+    </div>
+
+    <!-- Google Pixel 7 Pro -->
     <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Google Pixel 6 Front">
-        <img src="https://images.unsplash.com/photo-1579148117777-44f96a536098?w=500" alt="Google Pixel 6 Back">
-      </div>
-      <h3>📱 Google Pixel 6 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: Dual | 🤳 Front: 8MP<br>🔋 Battery: 4614mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 8,000</div>
-      <div class="fee">📌 Booking Fee: Rs. 1,500</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Google%20Pixel%206%20(8GB+128GB)%20-%20Price:%20Rs.8000" target="_blank">🛒 Order Now</a>
+        <h3>Google Pixel 7 Pro</h3>
+        <div class="img-container">
+            <img src="Https://storage.googleapis.com/pixel-goog-prod-files/downloads/Pixel%207%20Pro%20for%20SMB.pdf" alt="Google Pixel 7 Pro">
+            <div class="link-box"><strong>تصویر کا لنک:</strong> <a href="Https://storage.googleapis.com/pixel-goog-prod-files/downloads/Pixel%207%20Pro%20for%20SMB.pdf" target="_blank">Https://storage.googleapis.com/pixel-goog-prod-files/downloads/Pixel%207%20Pro%20for%20SMB.pdf</a></div>
+        </div>
+        <div class="details">
+            <p><strong>ماڈل:</strong> Google Pixel 7 Pro</p>
+            <p><strong>حالت:</strong> بہترین، صاف اور معیاری</p>
+        </div>
     </div>
 
-    <!-- Google Pixel 6 Pro -->
-    <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Google Pixel 6 Pro Front">
-        <img src="https://images.unsplash.com/photo-1579148117777-44f96a536098?w=500" alt="Google Pixel 6 Pro Back">
-      </div>
-      <h3>📱 Google Pixel 6 Pro 12GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: Triple | 🤳 Front: 11.1MP<br>🔋 Battery: 5003mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 10,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,000</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Google%20Pixel%206%20Pro%20(12GB+128GB)%20-%20Price:%20Rs.10500" target="_blank">🛒 Order Now</a>
+    <div class="footer">
+        <h3>رابطہ اور ادائیگی کی تفصیلات</h3>
+        <p><strong>ایزی پیسا اکاؤنٹ ٹائٹل:</strong> Mohammad Basit</p>
+        <p><strong>ایزی پیسا نمبر:</strong> 03420873107</p>
+        <p>کسی بھی معلومات یا بکنگ کے لیے رابطہ کریں!</p>
     </div>
-
-    <!-- Google Pixel 7 -->
-    <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Google Pixel 7 Front">
-        <img src="https://images.unsplash.com/photo-1579148117777-44f96a536098?w=500" alt="Google Pixel 7 Back">
-      </div>
-      <h3>📱 Google Pixel 7 8GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: Dual | 🤳 Front: 10.8MP<br>🔋 Battery: 4355mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 12,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 2,500</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Google%20Pixel%207%20(8GB+128GB)%20-%20Price:%20Rs.12500" target="_blank">🛒 Order Now</a>
-    </div>
-
-    <!-- Google Pixel 8 Pro -->
-    <div class="card">
-      <div class="img-container">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Google Pixel 8 Pro Front">
-        <img src="https://images.unsplash.com/photo-1579148117777-44f96a536098?w=500" alt="Google Pixel 8 Pro Back">
-      </div>
-      <h3>📱 Google Pixel 8 Pro 12GB + 128GB 🔥</h3>
-      <div class="specs">✅ PTA Approved<br>📸 Back: Triple | 🤳 Front: 10.5MP<br>🔋 Battery: 5050mAh | ⭐ Mint</div>
-      <div class="price">💵 Rs. 18,500</div>
-      <div class="fee">📌 Booking Fee: Rs. 3,070</div>
-      <a class="btn whatsapp" href="https://wa.me/923220528325?text=Hello,%20I%20want%20to%20order%20Google%20Pixel%208%20Pro%20(12GB+128GB)%20-%20Price:%20Rs.18500" target="_blank">🛒 Order Now</a>
-    </div>
-
-  </div>
-
-  <div class="contact-note">
-    📍 اگر کسی اور ماڈل کی تفصیل معلوم کرنی ہو تو براہ کرم واٹس ایپ پر رابطہ کریں۔ جزاک اللہ! 💡
-  </div>
-</section>
-
-<!-- Payment Section -->
-<section class="section">
-  <h2>💳 Payment Methods (ادائیگی کا طریقہ)</h2>
-  <div class="payment-box">
-    <h3>💚 EasyPaisa Payment Account</h3>
-    <p>📌 آرڈر کی بکنگ کے لیے درج ذیل اکاؤنٹ پر آرڈر فیس منتقل کریں اور سکرین شاٹ واٹس ایپ پر بھیجیں۔</p>
-    <div class="payment-details">
-      📱 Account Title: <span>Mohammad Basit</span><br>
-      🏦 EasyPaisa Number: <span style="color:#128C7E; font-size:22px;">03429873107</span>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>© Syed Azhar Ali Mobile Shop. All rights reserved.</p>
-</footer>
 
 </body>
 </html>
