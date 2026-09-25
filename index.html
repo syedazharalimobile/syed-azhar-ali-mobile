@@ -3,643 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سید اظہر علی موبائل شاپ - VIP Product Catalog (Part 1)</title>
+    <title>سید اظہر علی موبائل شاپ</title>
     <style>
-        body { font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; color: #333; direction: rtl; text-align: right; }
-        .header { background: linear-gradient(135deg, #075e54, #128c7e); color: white; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .header h1 { margin: 5px 0; font-size: 24px; }
-        .header p { margin: 5px 0; font-size: 16px; }
-        .container { max-width: 800px; margin: 20px auto; padding: 10px; }
-        .social-buttons { display: flex; justify-content: center; gap: 10px; margin: 15px 0; flex-wrap: wrap; }
-        .btn { background-color: #25d366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-        .btn-group { background-color: #128c7e; }
-        .product-card { background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 20px; overflow: hidden; border: 1px solid #e0e0e0; }
-        .product-header { background: #ff4757; color: white; padding: 10px 15px; font-size: 18px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-        .product-body { padding: 15px; display: flex; flex-direction: column; gap: 15px; }
-        @media(min-width: 600px) { .product-body { flex-direction: row; } }
-        .product-img { width: 100%; max-width: 200px; height: auto; object-fit: contain; border-radius: 8px; border: 1px solid #eee; margin: auto; }
-        .product-details { flex-grow: 1; }
-        .product-details ul { list-style: none; padding: 0; margin: 0; }
-        .product-details li { padding: 4px 0; font-size: 15px; border-bottom: 1px dashed #f1f1f1; }
-        .price-box { background: #f8f9fa; padding: 10px; border-radius: 8px; margin-top: 10px; font-weight: bold; color: #2c3e50; }
-        .order-btn { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; font-size: 16px; }
+        body {
+            font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 15px;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #fafafa;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            max-height: 300px;
+            object-fit: contain;
+            background: #000;
+        }
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .price {
+            color: #d9534f;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .details {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .whatsapp-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .wa-btn {
+            background: #25d366;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
+    <!-- شروعاتی حصہ -->
     <div class="header">
+        <h1>بسم اللہ الرحمن الرحيم</h1>
         <p>السلام علیکم ورحمۃ اللہ وبرکاتہ</p>
-        <h1>سید اظہر علی موبائل شاپ میں خوش آمدید</h1>
-        <p>تمام برانڈز کے موبائل مناسب قیمت اور بہترین کوالٹی میں دستیاب ہیں - حصہ اول (Part 1)</p>
-        
-        <div class="social-buttons">
-            <a href="https://wa.me/923420873107?text=السلام علیکم، میں سید اظہر علی موبائل شاپ سے رابطہ کرنا چاہتا ہوں۔" class="btn" target="_blank">💬 واٹس ایپ پر رابطہ کریں</a>
-            <a href="https://chat.whatsapp.com/GoupLinkHere" class="btn btn-group" target="_blank">📢 ہمارے واٹس ایپ گروپ کو جوائن کریں</a>
+        <h2>سید اظہر علی موبائل شاپ میں خوش آمدید</h2>
+        <a href="https://chat.whatsapp.com/your-group-link" class="get-btn btn" target="_blank">واٹس ایپ گروپ جوائن کریں</a>
+    </div>
+
+    <!-- موبائل پروڈکٹس سیکشن (مثال کے طور پر چند ماڈلز، آپ باقی بھی اسی طرح شامل کر سکتے ہیں) -->
+    
+    <div class="product-card">
+        <img src="YOUR_IMAGE_LINK_HERE" alt="iPhone Model">
+        <div class="product-title">iPhone 13 Pro Max</div>
+        <div class="details">
+            <p><strong>رم/ROM:</strong> 6GB / 256GB</p>
+            <p><strong>اسٹیٹس:</strong> PTA Approved / Factory Unlocked</p>
+            <p class="price">قیمت: رابطہ کریں</p>
+        </div>
+        <div class="whatsapp-buttons">
+            <a href="https://wa.me/923220528325" class="wa-btn" target="_blank">رابطہ: 0322-0528325</a>
+            <a href="https://wa.me/923424885881" class="wa-btn" target="_blank">رابطہ: 0342-4885881</a>
+            <a href="https://wa.me/923486236843" class="wa-btn" target="_blank">رابطہ: 0348-6236843</a>
         </div>
     </div>
 
-    <div class="container">
-
-        <!-- iPhone 5s -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 5s 🔥</div>
-            <div class="product-body">
-                <img src="https://gzhls.at/pix/e4/d7/e4d76fd5d1aef534-n.webp" alt="iPhone 5s" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 32GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Original</li>
-                        <li>🤳 Front Camera: Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 2,050<br>
-                        🔐 Order Booking Fee: Rs. 550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 5s (32GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 6s -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 6s 🔥</div>
-            <div class="product-body">
-                <img src="https://www.newgadgets.de/uploads/2015/09/iphone-6s-rosegold.jpg" alt="iPhone 6s" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 12MP Original</li>
-                        <li>🤳 Front Camera: 5MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 6,000<br>
-                        🔐 Order Booking Fee: Rs. 1,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 6s (128GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 7 Plus -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 7 Plus 🔥</div>
-            <div class="product-body">
-                <img src="https://bf1af2.akinoncloudcdn.com/products/2024/11/20/198015/e73ac147-ae80-4b99-83b4-e47dab3c9327_size3840_cropCenter.jpg" alt="iPhone 7 Plus" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Dual 12MP Original</li>
-                        <li>🤳 Front Camera: 7MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 7,500<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 7 Plus آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 8 Plus -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 8 Plus 🔥</div>
-            <div class="product-body">
-                <img src="https://static.iphoned.nl/orca/products/20923/apple-iphone-8-plus.png" alt="iPhone 8 Plus" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 12MP Original</li>
-                        <li>🤳 Front Camera: 7MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 8,000<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 8 Plus (256GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone X -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone X 🔥</div>
-            <div class="product-body">
-                <img src="https://cdn.idealo.com/folder/Product/5738/7/5738785/s1_produktbild_max/apple-iphone-x-256gb-silber.jpg" alt="iPhone X" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 12MP Original</li>
-                        <li>🤳 Front Camera: 7MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 11,500<br>
-                        🔐 Order Booking Fee: Rs. 2,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone X (128GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone XS Max -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone XS Max 🔥</div>
-            <div class="product-body">
-                <img src="https://olcha.uz/image/700x700/products/2018-09-22/apple-iphone-xs-max-64gb-space-grey-5203-1.jpg" alt="iPhone XS Max" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 12MP Original</li>
-                        <li>🤳 Front Camera: 7MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 14,000<br>
-                        🔐 Order Booking Fee: Rs. 2,570<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone XS Max (256GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
+    <!-- ایزی پیسہ فوٹر -->
+    <div class="footer">
+        <h3>ایزی پیسہ اکاؤنٹ کی تفصیلات</h3>
+        <p><strong>اکاؤنٹ ٹائٹل:</strong> محمد باسط</p>
+        <p><strong>اکاؤنٹ نمبر:</strong> 03420873107</p>
+        <img src="1000263641.jpg" alt="Easypaisa QR / Screenshot" style="max-width: 100%; border-radius: 6px; margin-top: 10px;">
     </div>
+</div>
+
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="ur" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سید اظہر علی موبائل شاپ - VIP Product Catalog (Part 2)</title>
-    <style>
-        body { font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; color: #333; direction: rtl; text-align: right; }
-        .header { background: linear-gradient(135deg, #075e54, #128c7e); color: white; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .header h1 { margin: 5px 0; font-size: 24px; }
-        .header p { margin: 5px 0; font-size: 16px; }
-        .container { max-width: 800px; margin: 20px auto; padding: 10px; }
-        .social-buttons { display: flex; justify-content: center; gap: 10px; margin: 15px 0; flex-wrap: wrap; }
-        .btn { background-color: #25d366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-        .btn-group { background-color: #128c7e; }
-        .product-card { background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 20px; overflow: hidden; border: 1px solid #e0e0e0; }
-        .product-header { background: #ff4757; color: white; padding: 10px 15px; font-size: 18px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-        .product-body { padding: 15px; display: flex; flex-direction: column; gap: 15px; }
-        @media(min-width: 600px) { .product-body { flex-direction: row; } }
-        .product-img { width: 100%; max-width: 200px; height: auto; object-fit: contain; border-radius: 8px; border: 1px solid #eee; margin: auto; }
-        .product-details { flex-grow: 1; }
-        .product-details ul { list-style: none; padding: 0; margin: 0; }
-        .product-details li { padding: 4px 0; font-size: 15px; border-bottom: 1px dashed #f1f1f1; }
-        .price-box { background: #f8f9fa; padding: 10px; border-radius: 8px; margin-top: 10px; font-weight: bold; color: #2c3e50; }
-        .order-btn { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; font-size: 16px; }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <p>السلام علیکم ورحمۃ اللہ وبرکاتہ</p>
-        <h1>سید اظہر علی موبائل شاپ میں خوش آمدید</h1>
-        <p>تمام برانڈز کے موبائل مناسب قیمت اور بہترین کوالٹی میں دستیاب ہیں - حصہ دوم (Part 2)</p>
-        
-        <div class="social-buttons">
-            <a href="https://wa.me/923420873107?text=السلام علیکم، میں سید اظہر علی موبائل شاپ سے رابطہ کرنا چاہتا ہوں۔" class="btn" target="_blank">💬 واٹس ایپ پر رابطہ کریں</a>
-            <a href="https://chat.whatsapp.com/GoupLinkHere" class="btn btn-group" target="_blank">📢 ہمارے واٹس ایپ گروپ کو جوائن کریں</a>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <!-- iPhone XR -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone XR 🔥</div>
-            <div class="product-body">
-                <img src="https://images2.kabum.com.br/produtos/fotos/99052/iphone-xr-amarelo-64gb-mry72bz__1541687028_gg.jpg" alt="iPhone XR" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 12MP Original</li>
-                        <li>🤳 Front Camera: 7MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 15,500<br>
-                        🔐 Order Booking Fee: Rs. 2,570<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone XR (128GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 11 -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 11 🔥</div>
-            <div class="product-body">
-                <img src="https://cdn.salla.sa/XqonY/UJJBzA6witC14LygQs2yh8nKnaFAumbU4Nx7Lzkn.png" alt="iPhone 11" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Dual 12MP Original</li>
-                        <li>🤳 Front Camera: 12MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 18,500<br>
-                        🔐 Order Booking Fee: Rs. 3,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 11 (128GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 11 Pro Max -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 11 Pro Max 🔥</div>
-            <div class="product-body">
-                <img src="https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw69087ca5/38960357/132358_large.png" alt="iPhone 11 Pro Max" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Triple 12MP Original</li>
-                        <li>🤳 Front Camera: 12MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 24,000<br>
-                        🔐 Order Booking Fee: Rs. 4,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 11 Pro Max (256GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 12 Pro Max -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 12 Pro Max 🔥</div>
-            <div class="product-body">
-                <img src="https://www.thekase.com/on/demandware.static/-/Sites-tk-product/default/dw341aa908/38974134/142035_large.png" alt="iPhone 12 Pro Max" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Triple 12MP Original</li>
-                        <li>🤳 Front Camera: 12MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 32,000<br>
-                        🔐 Order Booking Fee: Rs. 5,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 12 Pro Max (256GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- iPhone 13 -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 13 🔥</div>
-            <div class="product-body">
-                <img src="https://f.fcdn.app/imgs/f15066/electroventas.com.uy/elecuy/e9ea/original/catalogo/IPHONE13-128_AZ_4/1500-1500/celular-iphone-13-128gb-refurbished-azul.jpg" alt="iPhone 13" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Dual 12MP Original</li>
-                        <li>🤳 Front Camera: 12MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 35,000<br>
-                        🔐 Order Booking Fee: Rs. 5,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں iPhone 13 (128GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Vivo Y35 -->
-        <div class="product-card">
-            <div class="product-header">📱 Vivo Y35 🔥</div>
-            <div class="product-body">
-                <img src="https://cdn.cimri.io/image/1000x1000/vivo-y35-256gb-8gb-ram-yildizli-mavi_664979170.jpg" alt="Vivo Y35" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB | 8GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 50MP Triple Camera</li>
-                        <li>🤳 Front Camera: 16MP</li>
-                        <li>🔋 Battery: 5000mAh with 44W Fast Charging</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 16,500<br>
-                        🔐 Order Booking Fee: Rs. 2,570<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923420873107?text=السلام علیکم، میں Vivo Y35 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</body>
-    </html>
-    <!DOCTYPE html>
-<html lang="ur" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سید اظہر علی موبائل شاپ - VIP Product Catalog (Part 3)</title>
-    <style>
-        body { font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; color: #333; direction: rtl; text-align: right; }
-        .header { background: linear-gradient(135deg, #075e54, #128c7e); color: white; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .header h1 { margin: 5px 0; font-size: 24px; }
-        .header p { margin: 5px 0; font-size: 16px; }
-        .container { max-width: 800px; margin: 20px auto; padding: 10px; }
-        .social-buttons { display: flex; justify-content: center; gap: 10px; margin: 15px 0; flex-wrap: wrap; }
-        .btn { background-color: #25d366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-        .btn-group { background-color: #128c7e; }
-        .product-card { background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 20px; overflow: hidden; border: 1px solid #e0e0e0; }
-        .product-header { background: #ff4757; color: white; padding: 10px 15px; font-size: 18px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-        .product-body { padding: 15px; display: flex; flex-direction: column; gap: 15px; }
-        @media(min-width: 600px) { .product-body { flex-direction: row; } }
-        .product-img { width: 100%; max-width: 200px; height: auto; object-fit: contain; border-radius: 8px; border: 1px solid #eee; margin: auto; }
-        .product-details { flex-grow: 1; }
-        .product-details ul { list-style: none; padding: 0; margin: 0; }
-        .product-details li { padding: 4px 0; font-size: 15px; border-bottom: 1px dashed #f1f1f1; }
-        .price-box { background: #f8f9fa; padding: 10px; border-radius: 8px; margin-top: 10px; font-weight: bold; color: #2c3e50; }
-        .order-btn { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; font-size: 16px; }
-        .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .footer h3 { color: #25d366; margin-bottom: 10px; }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <p>السلام علیکم ورحمۃ اللہ وبرکاتہ</p>
-        <h1>سید اظہر علی موبائل شاپ میں خوش آمدید</h1>
-        <p>تمام برانڈز کے موبائل مناسب قیمت اور بہترین کوالٹی میں دستیاب ہیں - حصہ سوم (Part 3)</p>
-        
-        <div class="social-buttons">
-            <a href="https://wa.me/923220528325?text=السلام علیکم، میں سید اظہر علی موبائل شاپ سے رابطہ کرنا چاہتا ہوں۔" class="btn" target="_blank">💬 واٹس ایپ پر رابطہ کریں</a>
-            <a href="https://chat.whatsapp.com/KNt63DmBUdA2lsxYdOothr" class="btn btn-group" target="_blank">📢 ہمارے واٹس ایپ گروپ کو جوائن کریں</a>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <!-- iPhone 13 Pro Max -->
-        <div class="product-card">
-            <div class="product-header">📱 iPhone 13 Pro Max 🔥</div>
-            <div class="product-body">
-                <img src="https://media.rueducommerce.fr/rd/products/f03/f0384182b24a4faa0a476b2a98cd795773793e47.png" alt="iPhone 13 Pro Max" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 256GB</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Triple 12MP Original</li>
-                        <li>🤳 Front Camera: 12MP Original</li>
-                        <li>🔋 Battery Health: 100%</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 42,000<br>
-                        🔐 Order Booking Fee: Rs. 6,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں iPhone 13 Pro Max (256GB) آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Vivo Y20 -->
-        <div class="product-card">
-            <div class="product-header">📱 Vivo Y20 🔥</div>
-            <div class="product-body">
-                <img src="https://cdn.mediamart.vn/images/product/-0z42Y8.png" alt="Vivo Y20" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 64GB | 4GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: AI Triple Camera</li>
-                        <li>🤳 Front Camera: 8MP</li>
-                        <li>🔋 Battery: 5000mAh Long Lasting</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 9,500<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Vivo Y20 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Vivo Y21 -->
-        <div class="product-card">
-            <div class="product-header">📱 Vivo Y21 🔥</div>
-            <div class="product-body">
-                <img src="https://media.rueducommerce.fr/rd/products/7ca/7cac68cd86d4bf41d862e809da97c1c6f04ea81b.png" alt="Vivo Y21" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 64GB | 4GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Dual Camera</li>
-                        <li>🤳 Front Camera: 8MP</li>
-                        <li>🔋 Battery: 5000mAh with Fast Charging</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 10,500<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Vivo Y21 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Oppo A16 -->
-        <div class="product-card">
-            <div class="product-header">📱 Oppo A16 🔥</div>
-            <div class="product-body">
-                <img src="https://cdn.beebom.com/mobile/oppo-a16/oppo-16k-front-back-designs.png" alt="Oppo A16" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 64GB | 4GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: Triple AI Camera</li>
-                        <li>🤳 Front Camera: 8MP</li>
-                        <li>🔋 Battery: 5000mAh</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 9,000<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Oppo A16 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Oppo A17 -->
-        <div class="product-card">
-            <div class="product-header">📱 Oppo A17 🔥</div>
-            <div class="product-body">
-                <img src="https://boulanger.scene7.com/is/content/Boulanger/6932169319911_f_0" alt="Oppo A17" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 64GB | 4GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 50MP AI Dual Camera</li>
-                        <li>🤳 Front Camera: 5MP</li>
-                        <li>🔋 Battery: 5000mAh</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 10,000<br>
-                        🔐 Order Booking Fee: Rs. 1,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Oppo A17 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Oppo F19 -->
-        <div class="product-card">
-            <div class="product-header">📱 Oppo F19 🔥</div>
-            <div class="product-body">
-                <img src="https://img-prd-pim.poorvika.com/product/oppo-f19-midnight-blue-6gb-128gb-front-back-view.png" alt="Oppo F19" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB | 6GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 48MP Triple Camera</li>
-                        <li>🤳 Front Camera: 16MP Punch-hole</li>
-                        <li>🔋 Battery: 5000mAh with 33W Flash Charge</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 13,000<br>
-                        🔐 Order Booking Fee: Rs. 2,050<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Oppo F19 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Oppo F21 Pro -->
-        <div class="product-card">
-            <div class="product-header">📱 Oppo F21 Pro 🔥</div>
-            <div class="product-body">
-                <img src="https://www.giznext.com/pk/mobiles/oppo-f21-pro-gnt/images" alt="Oppo F21 Pro" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB | 8GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 64MP AI Triple Camera</li>
-                        <li>🤳 Front Camera: 32MP Sony Selfie Camera</li>
-                        <li>🔋 Battery: 4500mAh with 33W Fast Charging</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 16,000<br>
-                        🔐 Order Booking Fee: Rs. 2,570<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Oppo F21 Pro آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Google Pixel 7 -->
-        <div class="product-card">
-            <div class="product-header">📱 Google Pixel 7 🔥</div>
-            <div class="product-body">
-                <img src="https://m.media-amazon.com/images/I/51xbQh1suvL._AC_SL1000_.jpg" alt="Google Pixel 7" class="product-img">
-                <div class="product-details">
-                    <ul>
-                        <li>💾 Storage: 128GB | 8GB RAM</li>
-                        <li>✅ PTA Approved</li>
-                        <li>📸 Back Camera: 50MP Advanced Dual Camera</li>
-                        <li>🤳 Front Camera: 10.8MP Ultra HD</li>
-                        <li>🔋 Battery: All-day Battery with Google Tensor G2</li>
-                        <li>⭐ Condition: Mint</li>
-                        <li>💯 All Functions Working</li>
-                    </ul>
-                    <div class="price-box">
-                        💰 Price: Rs. 29,000<br>
-                        🔐 Order Booking Fee: Rs. 4,550<br>
-                        🚚 All Pakistan Delivery 🇵🇰
-                    </div>
-                    <a href="https://wa.me/923220528325?text=السلام علیکم، میں Google Pixel 7 آرڈر کرنا چاہتا ہوں۔" class="order-btn" target="_blank">Order Now 🛒</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- EasyPaisa Footer Details -->
-        <div class="footer">
-            <h3>💳 EasyPaisa Payment Details</h3>
-            <p><strong>Account Title:</strong> Mohammad Basit</p>
-            <p><strong>Account Number:</strong> 03420873107</p>
-            <p>برائے مہربانی آرڈر بکنگ فیس اس EasyPaisa اکاؤنٹ پر بھیج کر سکرین شاٹ واٹس ایپ پر ارسال کریں۔ شکریہ!</p>
-        </div>
-
-    </div>
-</body>
-                        </html>
-                
